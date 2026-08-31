@@ -6,12 +6,13 @@ from gui import JogoDaVelhaGUI
 def menu_principal():
     print("=== JOGO DA VELHA ===")
     print("1. Jogar no Terminal (CLI)")
-    print("2. Jogar em Janela Grafica (GUI)")
-    
-    opcao = input("Escolha uma opcao (1 ou 2): ").strip()
-    
+    print("2. Jogar em Janela Gráfica (GUI)")
+
+    opcao = input("Escolha uma opção (1 ou 2): ").strip()
+
     if opcao == "2":
         root = tk.Tk()
+        root.attributes('-zoomed', True)  # Maximiza a janela no Linux
         app = JogoDaVelhaGUI(root)
         root.mainloop()
     else:
