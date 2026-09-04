@@ -98,7 +98,9 @@ Derrotas: 0
 1 passed
 ```
 
-Esse teste comprova que o agente é robusto contra jogadas aleatórias e não perde nenhuma das partidas simuladas.
+Esse teste comprova que o agente é forte contra jogadas aleatórias e não perde nenhuma das partidas simuladas.
+
+---
 
 ## Alunos
 **Alisson Vitor, Pedro Felipe, Henrique Augusto e Luis Filipe**
