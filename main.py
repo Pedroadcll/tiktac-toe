@@ -12,7 +12,7 @@ def menu_principal():
 
     if opcao == "2":
         root = tk.Tk()
-        root.attributes('-zoomed', True)  # Maximiza a janela no Linux
+        root.attributes('-zoomed', True)  
         app = JogoDaVelhaGUI(root)
         root.mainloop()
     else:
