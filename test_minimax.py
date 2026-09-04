@@ -6,7 +6,7 @@ from cli import verificar_vencedor
 def jogadas_disponiveis(tabuleiro):
     return[i for i in range(9) if tabuleiro[i] == '']
 
-def simular_partida(bot_primeiro=true):
+def simular_partida(bot_primeiro=True):
     tabuleiro = [' '] * 9
 
     if bot_primeiro:
