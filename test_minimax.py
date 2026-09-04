@@ -19,10 +19,19 @@ def simular_partida(bot_primeiro=True):
         turno_bot = False
 
     while True:
+        resultado = verificar_vencedor(tabuleiro)
+
+        if resultado is not None:
+            return resultado
+        
         if turno_bot:
             posicao = obter_melhor_jogada(tabuleiro, simbolo_bot)
             tabuleiro[posicao] = simbolo_bot
         else:
+            disponiveis = jogadas_disponiveis(tabuleiro)
+
+            if not disponiveis:
+                return 'Empate'
             posicao = random.choice(jogadas_disponiveis(tabuleiro))
             tabuleiro[posicao] = simbolo_aleatorio
 
