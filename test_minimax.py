@@ -10,7 +10,7 @@ def simular_partida(bot_primeiro=True):
     tabuleiro = [' '] * 9
 
     if bot_primeiro:
-        simbolo_x = 'X'
+        simbolo_bot = 'X'
         simbolo_aleatorio = 'O'
         turno_bot = True
     else:
@@ -37,7 +37,7 @@ def test_minimax_nunca_perde():
     derrotas = 0
     vitorias = 0
     empates = 0
-    
+
     for _ in range(500):
         resultado = simular_partida(bot_primeiro=True)
 
