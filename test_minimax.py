@@ -47,11 +47,8 @@ def test_minimax_nunca_perde():
     vitorias = 0
     empates = 0
 
-    for i in range(50):
+    for _ in range(50):
         resultado = simular_partida(bot_primeiro=True)
-
-        if i < 10:
-            print(f"Partida {i + 1}: {resultado}")
 
         if resultado == 'X':
             vitorias += 1
