@@ -1,7 +1,7 @@
 import tkinter as tk
 from cli import iniciar_jogo
 from gui import JogoDaVelhaGUI
-
+from minimax import obter_melhor_jogada
 
 def menu_principal():
     print("=== JOGO DA VELHA ===")
@@ -12,10 +12,10 @@ def menu_principal():
     
     if opcao == "2":
         root = tk.Tk()
-        app = JogoDaVelhaGUI(root)
+        app = JogoDaVelhaGUI(root, funcao_bot=obter_melhor_jogada)
         root.mainloop()
     else:
-        iniciar_jogo()
+        iniciar_jogo(funcao_bot=obter_melhor_jogada)
 
 
 if __name__ == "__main__":
