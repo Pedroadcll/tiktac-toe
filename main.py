@@ -5,8 +5,8 @@ from gui import JogoDaVelhaGUI
 
 def menu_principal():
     print("=== JOGO DA VELHA ===")
-    print("1. Jogar no Terminal (CLI)")
-    print("2. Jogar em Janela Gráfica (GUI)")
+    print("1. Jogar no Terminal.")
+    print("2. Jogar em Janela Gráfica.")
 
     opcao = input("Escolha uma opção (1 ou 2): ").strip()
 
